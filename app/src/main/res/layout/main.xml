@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Main"
+    android:background="@drawable/background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btStart"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btstart"
+        android:enabled="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btPedra2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignTop="@+id/btPedra3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bt_pedra3"
+        android:enabled="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btPedra3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bt_pedra4"
+        android:enabled="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btPedra0"
+        android:layout_above="@+id/btPedra2"
+        android:layout_alignLeft="@+id/btPedra2"
+        android:layout_alignStart="@+id/btPedra2"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bt_pedra1"
+        android:enabled="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btPedra1"
+        android:background="@drawable/bt_pedra2"
+        android:layout_alignTop="@+id/btPedra0"
+        android:layout_alignLeft="@+id/btPedra3"
+        android:layout_alignStart="@+id/btPedra3"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvFinal"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btStart"
+        android:layout_alignEnd="@+id/btStart"
+        android:text="@string/perdeu"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/acertos"
+        android:id="@+id/tvAcertos"
+        android:layout_above="@+id/btStart"
+        android:layout_alignLeft="@+id/tvFinal"
+        android:layout_alignStart="@+id/tvFinal"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvNumAcertos"
+        android:layout_alignTop="@+id/tvAcertos"
+        android:layout_toRightOf="@+id/tvAcertos"
+        android:layout_toEndOf="@+id/tvAcertos"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:textColor="#0000FF" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Magic Rocks</string>
+    <string name="action_settings">Settings</string>
+    <string name="venceu">Voce venceu!</string>
+    <string name="perdeu">Voce perdeu!</string>
+    <string name="acertos">Acertos:</string>
+</resources>
